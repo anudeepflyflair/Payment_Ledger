@@ -1,6 +1,6 @@
 # IAM Role for Lambda Execution
 resource "aws_iam_role" "lambda_exec" {
-  name = "lambda_execution_role"
+  name = "lambda_execution_role-payment_processor"
 
   # Policy that allows Lambda to assume this role
   assume_role_policy = jsonencode({
